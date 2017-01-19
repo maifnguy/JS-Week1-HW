@@ -1,0 +1,48 @@
+Loop Tables
+
+1.  
+for (var x = 0; x <= 17; x = x + 2) {
+  console.log(2 * x + 7);
+}
+
+  loop count   value of x   output  
+  ----------   ----------   ------
+      01           0          7        <2 * 0 + 7 = 7>
+      02           2          11       <2 * 2 + 7 = 11>
+      03           4          15       <2 * 4 + 7 = 15>
+      04           6          19       <2 * 6 + 7 = 19>
+      05           8          23       <2 * 8 + 7 = 23>
+      06           10         27       <2 * 10 + 7 = 27>
+      07           12         31       <2 * 12 + 7 = 31>
+      08           14         35       <2 * 14 + 7 = 35>
+      09           16         39       <2 * 16 + 7 = 39>
+      10           18         -
+      
+
+2.
+var alpha = 'mpeuorwr';
+var s1 = '';
+var s2 = '';
+
+for (var index = 0; index < alpha.length; index++) {
+  if (index % 2 == 0) {
+    s1 = s1 + alpha.substr(index, 1);
+  } else {
+    s2 = s2 + alpha.substr(index, 1);
+  }
+}
+
+console.log(s1 + s2);
+
+
+loop count   index    s1    s2    output
+__________   _____   ____  ____   ______
+    01         0      m      -      m
+    02         1      m      p      mp
+    03         2      me     p      mep
+    04         3      me     pu     mepu
+    05         4      meo    pu     meopu
+    06         5      meo    pur    meopur
+    07         6      meow   pur    meowpur
+    08         7      meow   purr   meowpurr
+    09         8      -      -      -
